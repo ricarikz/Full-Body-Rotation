@@ -5,3 +5,5 @@ Day D is a flexible full-body gym session: add/remove exercises, choose sections
 
 Upload all seven files to the ROOT of your existing GitHub Pages repository.
 Export a JSON backup before replacing files. The browser storage key remains fullBodyRotationV2; existing data is not automatically cleared.
+
+V3.1: Workout D custom exercises display their own full per-set logger immediately below the exercise details.
