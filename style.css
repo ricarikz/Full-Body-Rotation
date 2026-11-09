@@ -11,3 +11,6 @@
 .rest-countdown{text-align:center;font-size:40px;font-weight:750;font-variant-numeric:tabular-nums;margin:8px 0 12px}
 .rest-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .rest-actions button:last-child{background:#eef1ef}
+
+/* Flexible Day D gym session */
+.daybuttons{grid-template-columns:repeat(4,minmax(0,1fr))}.daybuttons button{font-size:12px;overflow-wrap:anywhere}.daybuttons small{font-size:9px;letter-spacing:0}.custom-editor{border:1px solid #d4e4d9;border-radius:13px;padding:12px;margin:12px 0;background:#f9fcf9}.custom-editor .field{margin:9px 0}.custom-actions{display:flex;flex-wrap:wrap;gap:8px}.custom-actions button{flex:1;min-width:125px}.coverage{display:flex;gap:7px;flex-wrap:wrap;margin:10px 0}.coverage-item{padding:7px 9px;border-radius:18px;background:#edf0ee;color:#536b5c;font-size:12px}.coverage-item.covered{background:#d8f0d7;color:#185d38}.coverage-count{font-size:13px;font-weight:700;color:#275c40}.custom-editor .exercise-head .delete{padding:8px;min-height:38px}#customControls[hidden]{display:none}
