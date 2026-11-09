@@ -1,17 +1,22 @@
-FULL BODY ROTATION — SETUP
+FULL BODY ROTATION — VERSION 2
 
-Files: index.html, style.css, app.js, manifest.webmanifest, icon.svg, sw.js
+This update reuses the original Full Body Rotation project and GitHub Pages structure.
 
-Publish with GitHub Pages:
-1. Sign in to github.com and create a NEW PUBLIC repository named full-body-rotation. Do not use your work/company GitHub repository.
-2. Open the repository > Add file > Upload files.
-3. Upload the SIX files from this folder (not the ZIP itself). Commit changes.
-4. Go to Settings > Pages > Build and deployment. Choose Deploy from a branch, main, / (root), then Save.
-5. Wait for the Pages link. It will look like https://YOUR-USERNAME.github.io/full-body-rotation/ . Open your actual link on your Samsung phone.
-6. In Chrome, tap the three-dot menu > Add to Home screen > Install (or Create shortcut). In Samsung Internet, use its menu > Add page to > Home screen (labels may vary).
+UPLOAD TO EXISTING GITHUB REPOSITORY
+1. Open your existing Full-Body-Rotation repository.
+2. Select Add file > Upload files.
+3. Upload all seven files in this folder into the repository ROOT (not a nested folder).
+4. GitHub should show replacements for existing filenames; commit changes to main.
+5. Wait for GitHub Pages deployment, then refresh the existing app. If an old cached version persists, close the app and reload the website in Samsung Internet, or clear only the site's cached files (not site data).
 
-Your data is saved ONLY in the browser storage for the website origin. It does not sync to other devices, ChatGPT, or Samsung Notes. Export JSON backups in the Backup tab and save them somewhere safe. Restore using the Backup tab.
+DATA
+The new app uses localStorage key fullBodyRotationV2 and starts with no sessions or measurements. The previous app used fullBodyRotationV1. Old records remain separately in browser storage but are not imported. Version 2 updates preserve version 2 data unless you explicitly reset, restore a backup, or clear browser/site data.
 
-A1 and B1 are starting records from 2 and 4 November 2026; weights were grouped in the source notes, not reliably assigned to individual exercises. C1 is planned, not logged.
+Export a JSON backup from Settings regularly. The restore function accepts version 2 backups only. Data does not automatically sync between browsers/devices.
 
-Do not open index.html directly from the ZIP for reliable local storage or install functionality; use a hosted HTTPS site.
+TRACKING
+Each exercise shows the prescribed set count and rep target. Enter weight (0 for bodyweight), reps or seconds per side, and mark completed sets. Completed sets are saved with the workout. Previous results appear for the same exercise on the same workout day.
+
+Charts use recorded measurements and sets, and can be filtered to last 30 days, 90 days, or all time. The volume metric uses external weight × reps, so bodyweight-only exercises show 0 external-load volume.
+
+The app uses a service worker for offline-friendly operation after initial loading. GitHub Pages must be served over HTTPS for service-worker installation.
