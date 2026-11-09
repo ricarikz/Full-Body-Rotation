@@ -20,3 +20,5 @@ Each exercise shows the prescribed set count and rep target. Enter weight (0 for
 Charts use recorded measurements and sets, and can be filtered to last 30 days, 90 days, or all time. The volume metric uses external weight × reps, so bodyweight-only exercises show 0 external-load volume.
 
 The app uses a service worker for offline-friendly operation after initial loading. GitHub Pages must be served over HTTPS for service-worker installation.
+
+REST TIMER UPDATE: Marking a set complete offers 30, 60, 90 or 120 seconds of rest. Select to start; +30 sec and Skip rest are available. Rest is optional and does not alter workout data.
